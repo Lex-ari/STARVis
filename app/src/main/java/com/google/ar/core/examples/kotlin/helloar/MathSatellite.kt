@@ -20,7 +20,7 @@ class MathSatellite private constructor(){
             return INSTANCE ?: throw IllegalStateException("SatelliteRepository must be initialized")
         }
     }
-    private val distance = 0.5F
+    private val distance = 1F
 
     /*
     Assumes...

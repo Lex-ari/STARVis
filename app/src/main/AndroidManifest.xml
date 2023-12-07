@@ -33,7 +33,7 @@
   <application
       android:name="com.google.ar.core.examples.kotlin.helloar.HelloApplication"
       android:allowBackup="true"
-      android:icon="@drawable/ic_launcher"
+      android:icon="@drawable/bronco_space_logo"
       android:label="@string/app_name"
       android:theme="@style/AppTheme"
       android:usesCleartextTraffic="false"
