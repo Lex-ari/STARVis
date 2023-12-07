@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--                                            -->
+<!--    Author: Alex Mariano        	        -->
+<!--    Dr. Dave Johannsen                      -->
+<!--    CS 4750 Mobile Application Development  -->
+<!--                                            -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/layout_background"
+    android:clipToOutline="true"
+    >
+    <ImageView
+        android:id="@+id/list_item_image_background"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/space_laser" />
+
+    <TextView
+        android:id="@+id/list_item_coordinates_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="LAT -39.86493451, LON 158.35261287"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/list_item_id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="25544"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/list_item_coordinates_textview"
+        app:layout_constraintStart_toStartOf="@+id/list_item_coordinates_textview" />
+
+    <TextView
+        android:id="@+id/list_item_satellite_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="International Space Station"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/list_item_goto_button"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

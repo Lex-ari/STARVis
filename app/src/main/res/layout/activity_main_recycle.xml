@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--                                            -->
+<!--    Author: Alex Mariano        	        -->
+<!--    Dr. Dave Johannsen                      -->
+<!--    CS 4750 Mobile Application Development  -->
+<!--                                            -->
+
+<androidx.fragment.app.FragmentContainerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.broncospace.android.starvis.SatelliteGalleryFragment"
+    tools:context="com.broncospace.android.starvis.MainActivity" />
