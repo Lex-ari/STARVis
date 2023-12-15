@@ -206,7 +206,7 @@ class HelloArRenderer(val activity: HelloArActivity) :
       virtualObjectAlbedoTexture =
         Texture.createFromAsset(
           render,
-          "models/blank.png",
+          "models/whitesquare.png",
           Texture.WrapMode.CLAMP_TO_EDGE,
           Texture.ColorFormat.SRGB
         )
